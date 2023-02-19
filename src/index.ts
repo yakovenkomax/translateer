@@ -36,3 +36,8 @@ const { PUPPETEER_WS_ENDPOINT, PAGE_COUNT = "5", PORT = "8999" } = process.env;
 		process.exit(1);
 	}
 })();
+
+export default async (req: any, res: any) => {
+	await fastify.ready();
+	fastify.server.emit('request', req, res);
+}
