@@ -75,6 +75,6 @@ typings/
 # FuseBox cache
 .fusebox/
 
-dist
+build
 
 .idea

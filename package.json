@@ -2,12 +2,12 @@
 	"name": "translateer",
 	"version": "2.0.0",
 	"description": "",
-	"main": "dist/index.js",
+	"main": "build/app.js",
 	"scripts": {
-		"dev": "ts-node src/index.ts",
+		"dev": "ts-node src/app.ts",
 		"debug": "DEBUG=true npm run dev",
-		"start": "node dist/index.js",
-		"build": "rm -rf dist && tsc && cp -R src/public dist/public",
+		"start": "node build/app.js",
+		"build": "rm -rf build && tsc && cp -R src/public build/public",
 		"bootstrap": "npm ci && npm run build && npm run start"
 	},
 	"author": "",
